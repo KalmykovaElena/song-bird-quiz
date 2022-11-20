@@ -558,6 +558,8 @@ input[type=range] {
   top: 0;
   right: 0;
   z-index: 4;
+}
+.start-page-wrapper .slider .close-slider img {
   cursor: pointer;
 }
 .start-page-wrapper .slider .slider-container {
@@ -571,7 +573,7 @@ input[type=range] {
 .start-page-wrapper .slider .slider-container .slide {
   width: 33.3333333333%;
   height: 100%;
-  background-image: url("../assets/gold.jpg");
+  background-image: url("assets/gold.jpg");
   background-size: cover;
   font-size: calc(22px + 1.25vw);
   display: flex;

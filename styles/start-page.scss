@@ -59,9 +59,11 @@
         top: 0;
         right: 0;
         z-index: 4;
-        cursor:pointer;
-      }
 
+        img {
+          cursor: pointer;
+        }
+      }
       .slider-container {
         width: 300%;
         height: 100%;
