@@ -3,7 +3,7 @@
 .start-page {
   position: relative;
   height: 100vh;
-  background-image: url("../assets/start-bk.jpg");
+  background-image: url("assets/start-bk.jpg");
   background-size: 100% 100%;
   justify-content: center;
   overflow: hidden;
@@ -43,6 +43,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor:pointer;
       }
 
       .next-arrow {
@@ -249,6 +250,7 @@
       }
 
       button {
+        cursor:pointer;
         font-family: 'Caveat', cursive;
         background-color: rgba(255, 255, 255, 0);
         color: #c5b250;

@@ -96,10 +96,6 @@ audio{
 }
 .info-close{
   transform: translateX(100%);
-   //@media screen and(max-width:1000px ){
-   //  transform: translateX(0%);
-   //  transform: translateY(110%);
-   //}
 }
 .info-open-page {
   transition: .8s;
