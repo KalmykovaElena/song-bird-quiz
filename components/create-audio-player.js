@@ -12,7 +12,7 @@ function CreateAudioPlayer(card, place, selector) {
                                 </div>
                                 <div class="audio-controls">
                                 <input type="range" class="audio-volume"  min="0" max="10">
-                                <img src="../assets/volume-control.png" alt="#" class="audio-image">
+                                <img src="assets/volume-control.png" alt="#" class="audio-image">
                                 <div class="audio-duration">00:00</div>
                                 </div>
                             </div>      
