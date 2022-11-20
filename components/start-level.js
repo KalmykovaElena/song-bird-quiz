@@ -61,6 +61,7 @@ function StartLevel(data, levelNumber) {
 
         if (+e.target.id === questionCard.id) {
             itemBtn.classList.add('success')
+            itemBtn.parentElement.classList.add('success-item')
             canAnswer = false
             levelButton.classList.remove('disabled')
             playSound('./assets/audio/success.mp3')

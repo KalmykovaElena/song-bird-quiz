@@ -63,7 +63,7 @@
   justify-content: center;
   flex-grow: 1;
   border: 0.3px solid #ee160a;
-  background-image: url("assets/gold.jpg");
+  background-image: url("../../assets/gold.jpg");
   border-radius: 8px;
 }
 .game-page__navbar-item:hover {
@@ -75,7 +75,7 @@
   position: relative;
   padding: 15px;
   border-radius: 15px;
-  background-image: url("assets/current-item.jpg");
+  background-image: url("../../assets/current-item.jpg");
   background-size: 100% 100%;
   border: none;
 }
@@ -246,6 +246,9 @@
 .game-board__answers-list-item .success {
   background-color: #38ec1c;
 }
+.game-board__answers-list .success-item {
+  background-color: #f9eb70;
+}
 
 .btn-image img {
   width: 4vw;
@@ -403,7 +406,7 @@
   align-items: center;
   justify-content: center;
   min-height: 8vh;
-  background-image: url("assets/gold.jpg");
+  background-image: url("../../assets/gold.jpg");
   background-size: cover;
   border-radius: 10px;
   font-size: 2.5rem;
@@ -501,7 +504,7 @@ input[type=range] {
 .start-page {
   position: relative;
   height: 100vh;
-  background-image: url("assets/start-bk.jpg");
+  background-image: url("../assets/start-bk.jpg");
   background-size: 100% 100%;
   justify-content: center;
   overflow: hidden;
@@ -555,6 +558,7 @@ input[type=range] {
   top: 0;
   right: 0;
   z-index: 4;
+  cursor: pointer;
 }
 .start-page-wrapper .slider .slider-container {
   width: 300%;
@@ -567,7 +571,7 @@ input[type=range] {
 .start-page-wrapper .slider .slider-container .slide {
   width: 33.3333333333%;
   height: 100%;
-  background-image: url("assets/gold.jpg");
+  background-image: url("../assets/gold.jpg");
   background-size: cover;
   font-size: calc(22px + 1.25vw);
   display: flex;
@@ -770,7 +774,7 @@ input[type=range] {
   transition: all 1s ease 0s;
   opacity: 0;
   visibility: hidden;
-  background-image: url("assets/fon-abstraktsiya-197.jpg");
+  background-image: url("../assets/fon-abstraktsiya-197.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -780,7 +784,7 @@ input[type=range] {
 .result-page__content {
   width: 70%;
   height: 70%;
-  background-image: url("assets/gold.jpg");
+  background-image: url("../assets/gold.jpg");
   background-size: cover;
   transition: all 1s ease 0s;
   transform: translate(0px, -100%);
@@ -815,6 +819,7 @@ input[type=range] {
 }
 .result-page__content .result-buttons {
   width: 70%;
+  cursor: pointer;
 }
 .result-page__content button {
   font-family: "Marck Script", cursive;
@@ -840,7 +845,7 @@ input[type=range] {
   left: 0;
   transition: all 1s ease 0s;
   transform: translateX(100%);
-  background-image: url("assets/gold.jpg");
+  background-image: url("../assets/gold.jpg");
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0px 0px 35px 16px rgba(222, 188, 112, 0.5);
@@ -1001,6 +1006,10 @@ audio {
   .info-open-page img {
     width: 30%;
   }
+}
+
+input[type=range] {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
