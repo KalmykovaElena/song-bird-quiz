@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SongBird</title>
+</head>
+<body>
+<div class="game-wrapper">
+    <section class="page start-page">
+        <div class="start-page-wrapper">
+            <div class="start-page-performance">
+                <div class="logo"> Song<span>bird</span></div>
+                <img class="start-page-performance-image"
+                     src="./assets/kisspng-cygnini-smiley-bird-clip-art-swan-5a74c7eb620915.6370366915176027954016.png"
+                     alt=""></div>
+            <div class="start-page-menu">
+                <ul>
+                    <li class="start-page-menu-item info">Справка</li>
+                    <li class="start-page-menu-item birds-gallery">Познакомьтесь с птицами</li>
+                    <li class="start-page-menu-item results">Результаты</li>
+                    <li class="start-page-menu-item start">Старт</li>
+                </ul>
+                <div class="result-list start-page-results info-close">
+                    Результаты:
+                    <div class="result-list-items "></div>
+                    <div class="result-list-buttons">
+                        <button class="result-list__remove">Удалить результаты</button>
+                        <button class="result-list__restart start">Играть</button>
+                        <button class="result-list__close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="start-page-footer">
+            <a href="https://github.com/KalmykovaElena"><img src="./assets/github.png" alt="#" class="git"></a>
+            <span>2022</span>
+            <a class="link-logo" href="https://app.rs.school/"><img src="./assets/rs_school_js.png" alt="#"
+                                                                    class="logo"></a>
+        </footer>
+    </section>
+    <section class="page wrapper-game-page">
+        <div class="game-page">
+            <header class="game-page__header">
+                <div class="game-page__header-logo"> Song<span>bird</span></div>
+                <div class="game-page__header-toMain"> На главную</span></div>
+                <div class="game-page__header__score"> Score: <span class="game-page__header__score-value">0</span>
+                </div>
+            </header>
+            <div class="game-page__navbar">
+                <ul class="game-page__navbar-list">
+                    <li class="game-page__navbar-item">Разминка</li>
+                    <li class="game-page__navbar-item">Воробьиные</li>
+                    <li class="game-page__navbar-item">Лесные птицы</li>
+                    <li class="game-page__navbar-item">Певчие птицы</li>
+                    <li class="game-page__navbar-item">Хищные птицы</li>
+                    <li class="game-page__navbar-item">Морские птицы</li>
+                </ul>
+            </div>
+            <main class="game-page__game-board">
+                <div class="game-board__question">
+                    <div class="game-board__question-image">
+                        <img class="image" src="">
+                    </div>
+                    <h2 class="game-board__question-name"></h2>
+                    <div class="game-board__question-sound">
+                    </div>
+                </div>
+                <div class="game-board__answers-wrapper">
+                    <div class="game-board__answers">
+                        <ul class="game-board__answers-list">
+                        </ul>
+                    </div>
+                    <div class="game-board__description">
+                    </div>
+                </div>
+            </main>
+            <div class="game-page__level-button "> Next level</div>
+        </div>
+        <div class="page result-page">
+            <div class="result-page__content">
+                <div class="game-score"></div>
+                <div class="result-buttons">
+                    <button class="restart-button">restart</button>
+                    <button class="results-button">results</button>
+                </div>
+                <div class="result-list finish-game-results">
+                    Результаты
+                    <div class="result-list-items "></div>
+                    <div class="result-list-buttons">
+                        <button class="result-list__remove">Удалить результаты</button>
+                        <button class="result-list__restart">Играть сноова</button>
+                        <button class="result-list__close">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="./main.js"></script>
+</div>
+</body>
+</html>

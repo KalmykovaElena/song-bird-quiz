@@ -1,0 +1,54 @@
+.game-page__navbar {
+
+  &-list {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    border-radius: 10px;
+    font-size:2.3rem ;
+    transition: 1s;
+
+    @media screen and(max-width: 1000px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+
+    @media screen and(max-width:500px ){
+     width: 90vw;
+      margin: 0 auto;
+    }
+
+  }
+
+  &-item {
+    white-space: nowrap;
+    font-weight: 700;
+    color:#851c1c;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: .3px solid #ee160a;
+
+    background-image: url("../../assets/gold.jpg");
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #00bc8c
+    }
+  }
+  .current{
+   font-size: 2rem;
+    color:#ffffff;
+    position: relative;
+    padding: 15px;
+    border-radius: 15px;
+    background-image: url("../../assets/current-item.jpg");
+    background-size: 100% 100%;
+    border: none;
+
+  }
+}

@@ -1,0 +1,24 @@
+@import "game-page-header";
+@import "game-page-navbar";
+@import "game-page-game-board";
+.wrapper-game-page{
+  position: relative;
+  transition: all 1s ease 0s;
+}
+.game-page {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+.btn-play, .progress-container{
+  cursor: pointer;
+}
+
+  @media screen and(max-width:500px ){
+    width: 95%;
+    font-size: 1.5rem;
+  }
+}

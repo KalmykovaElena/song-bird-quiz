@@ -1,0 +1,114 @@
+@import './styles/game-page/game-page';
+@import './styles/start-page';
+@import './styles/result-page';
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#000000;
+  min-height: 100vh;
+}
+li{
+  list-style: none;
+}
+html{
+  overflow: auto;
+  font-size: 10px;
+  @media screen and (min-width:1475px ) {
+    font-size: 15px;
+  }
+}
+.game-wrapper{
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.page{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid white;
+  overflow: hidden;
+  @media screen and(max-width:770px ){
+    overflow: auto;
+  }
+}
+
+audio{
+  width: 600px;
+  background-color: green;
+}
+.open{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px,0%) ;
+}
+.result-list{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  transition: all 1s ease 0s;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 0px 35px 16px rgb(222 188 112 / 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+  &-items{
+    flex:1 1 auto;
+    width: 85%;
+    margin: 0 auto;
+    overflow-y: auto;
+
+  }
+  .score-item{
+    font-size: calc(16px + 16 * (100vw / 1280));
+  }
+}
+.info-open{
+  transform: translate(0%);
+  @media screen and(max-width:1000px ){
+    transform: translateY(-50%) translateX(30%) scaleY(2);
+    width: 70%;
+    font-size: calc(25px + 15 * (100vw / 1000));
+    text-align: center;
+  }
+  @media screen and(max-width:750px ){
+
+    font-size: calc(25px + 10 * (100vw / 1000));
+
+  }
+}
+.info-close{
+  transform: translateX(100%);
+   //@media screen and(max-width:1000px ){
+   //  transform: translateX(0%);
+   //  transform: translateY(110%);
+   //}
+}
+.info-open-page {
+  transition: .8s;
+  @media screen and(max-width: 1000px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    img {
+      width: 30%;
+    }
+
+  }
+}

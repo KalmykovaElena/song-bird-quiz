@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.result-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url("../assets/fon-abstraktsiya-197.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 70%;
+    height: 70%;
+    background-image: url('../assets/gold.jpg');
+    background-size: cover;
+    transition: all 1s ease 0s;
+    transform: translate(0px, -100%);
+    opacity: 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 35px 16px rgb(222 188 112 / 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(40px + 24 * (100vw / 1280));
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+    color: #851c1c;
+    text-shadow: 1px 1px 2px #c32831, 0 0 1em #d3d3ec, 0 0 0.2em #ffae00;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    @media screen and(max-width: 500px){
+      font-size: calc(34px + 24 * (100vw / 1280));
+    }
+    & div {
+      text-align: center;
+    }
+
+    .score-value {
+      font-size: 1.2em;
+      color: #ef5311;
+      text-decoration: underline;
+    }
+
+    .result-buttons {
+      width: 70%;
+
+    }
+
+    button {
+      font-family: 'Marck Script', cursive;
+      background: linear-gradient(#070707, #862021);
+      color: white;
+      width: 30%;
+      font-size: calc(24px + 16 * (100vw / 1280));
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      @media screen and(max-width: 650px){
+        width: 93%;
+        padding: 15px;
+        font-size: calc(24px + 16 * (100vw / 650))
+      }
+    }
+
+    .result-list {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: all 1s ease 0s;
+      transform: translateX(100%);
+      background-image: url('../assets/gold.jpg');
+      background-size: cover;
+      border-radius: 15px;
+      box-shadow: 0px 0px 35px 16px rgb(222 188 112 / 50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        overflow: hidden;
+        flex-wrap: wrap;
+      }
+
+      &-items {
+        flex: 1 1 auto;
+        width: 85%;
+        margin: 0 auto;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 20px; /* ширина scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background: rgba(173, 169, 163, 0.41); /* цвет дорожки */
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #3d200e; /* цвет плашки */
+          border-radius: 20px; /* закругления плашки */
+          border: 3px solid #443926; /* padding вокруг плашки */
+        }
+      }
+
+      .score-item {
+        font-size: calc(24px + 16 * (100vw / 1280));
+        @media screen and(max-width:1000px ){
+          font-size: calc(24px + 16 * (100vh / 1280));
+
+        }
+      }
+    }
+  }
+}

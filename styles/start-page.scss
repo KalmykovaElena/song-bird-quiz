@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+.start-page {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/start-bk.jpg");
+  background-size: 100% 100%;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 1s ease 0s;
+
+  &-wrapper {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(16 15 15 / 79%);
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: inset 0 0 18px #a9aba3;
+    display: flex;
+    position: relative;
+    @media screen and(max-width: 1000px) {
+      flex-direction: column;
+      padding-bottom: 25px;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 0.8s ease 0s;
+
+      .arrow {
+        position: absolute;
+        top: 0;
+        width: 45px;
+        height: 100%;
+        background-color: rgba(7, 7, 7, 0.37);
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .next-arrow {
+        right: 0;
+
+        img {
+          transform: scale(-1, 1);
+        }
+
+      }
+
+      .close-slider {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+      }
+
+      .slider-container {
+        width: 300%;
+        height: 100%;
+        position: relative;
+        right: 100%;
+        display: flex;
+        justify-content: center;
+
+        .slide {
+          width: calc(100% / 3);
+          height: 100%;
+          background-image: url('../assets/gold.jpg');
+          background-size: cover;
+          font-size: calc(22px + 16 * (100vw / 1280));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 15px 50px;
+
+          .description-player {
+            right: 0;
+            top: 0;
+            margin-bottom: 26px;
+            width: 100%;
+
+
+            @media screen and(max-width: 800px) {
+              input[type="range"] {
+                width: 70%;
+                position: relative;
+                top: 25px;
+              }
+              .audio-image {
+                position: relative;
+                top: 25px;
+              }
+
+            }
+            @media screen and(max-width: 500px) {
+              input[type="range"] {
+                min-width: 100px;
+                right: 20%;
+              }
+              .audio-duration {
+                position: relative;
+                right: 40%;
+              }
+            }
+          }
+
+          .game-board__description-image {
+            width: 30vw;
+            height: 25vw;
+            align-self: center;
+            border: 2px solid #1b0303;
+
+            .image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes move-left {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 200%;
+    }
+  }
+
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 1.5s;
+  }
+
+  &-performance {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-direction: column;
+    transition: .8s;
+    @media screen and(max-width: 1000px) {
+      width: 100%;
+      height: 65%;
+      justify-content: space-around;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 9vw;
+      font-weight: bold;
+      font-family: 'Island Moments', cursive;
+
+      span {
+        color: #f2d749;
+        text-shadow: 8px 7px 16px #f2eded, 0 0 1em #ebea2f;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      transition: all 1s;
+      @media screen and (max-width: 1200px) {
+        height: 65%;
+      }
+      @media screen and(max-width: 1000px) {
+        width: 75%;
+
+      }
+    }
+
+  }
+
+  &-menu {
+    width: 50%;
+    color: #c5b250;
+    font-style: italic;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    font-family: 'Caveat', cursive;
+    position: relative;
+    text-replace: .8s;
+    @media screen and(max-width: 1000px) {
+      width: 100%;
+      font-size: 5rem;
+    }
+
+    ul {
+      transition: all 1s ease 0s;
+    }
+
+    &-item {
+      text-align: center;
+      transition: .3s;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+
+      &:hover {
+        text-shadow: 8px 7px 16px #f2eded, 0 0 1em #ebea2f;
+        scale: 1.2;
+        cursor: pointer;
+        color: #f3cf15;
+      }
+
+      &:last-child {
+        margin-top: 10%;
+        font-size: 5rem;
+        color: #9d8407;
+      }
+    }
+
+    .result-list {
+      padding: 15px;
+
+      &-buttons {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      button {
+        font-family: 'Caveat', cursive;
+        background-color: rgba(255, 255, 255, 0);
+        color: #c5b250;
+        font-size: 3rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        @media screen and(max-width: 500px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(24px + 16 * (100vw / 1280));
+    color: white;
+    padding: 20px;
+    transition: .5s;
+
+    span {
+      text-decoration: underline;
+    }
+
+    .git {
+      width: 55px
+    }
+
+    .logo {
+      width: 80px;
+    }
+
+    @media screen and(max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import CreateAudioPlayer from "../create-audio-player.js";
+import CreateAudioPlayer from "./create-audio-player.js";
 
 
 export function showCard(id, array) {
@@ -6,12 +6,10 @@ export function showCard(id, array) {
     let descriptionCard = document.querySelector('.game-board__description')
     descriptionCard.replaceChildren()
     descriptionCard.insertAdjacentHTML('afterbegin', createCard(checkedCard))
- CreateAudioPlayer(checkedCard, 'description-player')
-
-
+    CreateAudioPlayer(checkedCard, descriptionCard, 'description-player')
 };
 
-function createCard(card) {
+export function createCard(card) {
     return `
      <div class="game-board__description-image">
                             <img class="image description-image"  src=${card.image} alt=${card.name}>
