@@ -501,7 +501,7 @@ input[type=range] {
 .start-page {
   position: relative;
   height: 100vh;
-  background-image: url("../assets/start-bk.jpg");
+  background-image: url("assets/start-bk.jpg");
   background-size: 100% 100%;
   justify-content: center;
   overflow: hidden;
