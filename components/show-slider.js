@@ -13,14 +13,14 @@ export const showSlider = (data) => {
     slider.classList.add('slider')
     slider.style.opacity = '0'
     slider.innerHTML = `
-<div class="prev-arrow arrow"><img src="../assets/left-arrow.png"/></div>
+<div class="prev-arrow arrow"><img src="assets/left-arrow.png"/></div>
 <div class="slider-container">
     <div class="prev-slider slide"></div>
     <div class="current-slider slide"></div>
     <div class="next-slider slide"></div>
     </div>
-    <div class="next-arrow arrow"><img src="../assets/left-arrow.png" alt=""></div>
-    <div class="close-slider"><img src="../assets/close-slider.png"</div>
+    <div class="next-arrow arrow"><img src="assets/left-arrow.png" alt=""></div>
+    <div class="close-slider"><img src="assets/close-slider.png"</div>
     `
     wrapperSlider.append(slider)
     setTimeout(() => {

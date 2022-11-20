@@ -8,7 +8,7 @@ export const showLevelResult = (score) => {
     const restart = document.querySelector('.restart-button')
     const gameScore = document.querySelector('.game-score')
     const resultList = document.querySelector('.result-list-items')
-    const resultButton = document.querySelector('.results-button')
+    const resultButton = document.querySelector('.results-button-res')
 
     gameScore.innerHTML = score == 30 ?
         `<div>Поздравляем,Вы набрали максимальный балл!!!</div>`
