@@ -21,7 +21,7 @@ function StartLevel(data, levelNumber) {
     let questionName = document.querySelector('.game-board__question-name')
     questionName.innerHTML = '******'
     let questionImage = document.querySelector('.game-board__question-image')//div
-    questionImage.firstElementChild.src = '../assets/Weaver_Bird_Silhouette.jpg'
+    questionImage.firstElementChild.src = 'assets/Weaver_Bird_Silhouette.jpg'
     let questionCard = answersArray[getRandomNumber(0, answersArray.length - 1)]
 
     CreateAudioPlayer(questionCard, questionBoard, 'game-board__question-sound')
@@ -38,7 +38,7 @@ function StartLevel(data, levelNumber) {
      <div class="txt-2">и</div>
      <div class="txt-3">выберите птицу из списка</div>
      </div>
-    <img class="flying-bird" src="../assets/pngwing.com (7).png" alt="">
+    <img class="flying-bird" src="assets/pngwing.com (7).png" alt="">
     </div>
     `
 
@@ -63,7 +63,7 @@ function StartLevel(data, levelNumber) {
             itemBtn.classList.add('success')
             canAnswer = false
             levelButton.classList.remove('disabled')
-            playSound('../assets/audio/success.mp3')
+            playSound('./assets/audio/success.mp3')
             questionAudio.pause()
             questionAudio.currentTime = 0
             questionName.innerHTML = questionCard.name
@@ -89,7 +89,7 @@ function StartLevel(data, levelNumber) {
 
         } else if (canAnswer) {
             itemBtn.classList.add('error')
-            playSound('../assets/audio/mistake.mp3')
+            playSound('./assets/audio/mistake.mp3')
             pointsNumber -= 1
 
         }
