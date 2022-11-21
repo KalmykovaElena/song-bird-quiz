@@ -26,7 +26,7 @@ export const showGameInformation = (node, info) => {
     if (resultsWrapper.classList.contains('info-close')) {
         resultsWrapper.classList.remove('info-close')
     }
-    resultsWrapper.addEventListener("click", (e) => {
+     resultsWrapper.addEventListener("click", (e) => {
         if (e.target.classList.contains('result-list__restart')) {
             startGame()
             perfomance.classList.remove('info-open-page')
