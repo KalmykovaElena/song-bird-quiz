@@ -5,7 +5,7 @@
   height: 100vh;
   background-image: url("assets/start-bk.jpg");
   background-size: 100% 100%;
-  justify-content: center;
+  justify-content: end;
   overflow: hidden;
   transition: all 1s ease 0s;
 
@@ -264,7 +264,6 @@
   }
 
   &-footer {
-    position: absolute;
     bottom: 0;
     right: 0;
     width: 50%;

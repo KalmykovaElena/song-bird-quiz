@@ -506,7 +506,7 @@ input[type=range] {
   height: 100vh;
   background-image: url("assets/start-bk.jpg");
   background-size: 100% 100%;
-  justify-content: center;
+  justify-content: end;
   overflow: hidden;
   transition: all 1s ease 0s;
 }
@@ -744,7 +744,6 @@ input[type=range] {
   }
 }
 .start-page-footer {
-  position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
@@ -1014,7 +1013,7 @@ audio {
 }
 @media screen and (max-width: 1000px) {
   .info-open {
-    transform: translateY(-50%) translateX(30%) scaleY(2);
+    transform: translateY(-20%) translateX(30%) scaleY(1.5);
     width: 70%;
     font-size: calc(25px + 1.5vw);
     text-align: center;
@@ -1022,7 +1021,7 @@ audio {
 }
 @media screen and (max-width: 750px) {
   .info-open {
-    font-size: calc(25px + 1vw);
+    font-size: calc(22px + 1vw);
   }
 }
 
