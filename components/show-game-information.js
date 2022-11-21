@@ -10,6 +10,7 @@ export const showGameInformation = (node, info) => {
         `
     }).join('') : "Нет результатов"
     console.log(resultsWrapper.firstChild)
+    console.log(resultsWrapper)
     if (info) {
         resultsWrapper.firstChild.textContent = ''
         resultsWrapper.firstElementChild.innerHTML = info
@@ -29,6 +30,7 @@ export const showGameInformation = (node, info) => {
         if (e.target.classList.contains('result-list__restart')) {
             startGame()
             perfomance.classList.remove('info-open-page')
+            resultsWrapper.parentElement.firstElementChild.style.opacity = '1'
             resultsWrapper.parentElement.parentElement.classList.remove('open')
             resultsWrapper.parentElement.classList.remove('open')
             setTimeout(() => {

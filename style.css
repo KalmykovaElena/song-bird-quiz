@@ -788,7 +788,7 @@ input[type=range] {
 .result-page__content {
   width: 70%;
   height: 70%;
-  background-image: url("../assets/gold.jpg");
+  background-image: url("assets/gold.jpg");
   background-size: cover;
   transition: all 1s ease 0s;
   transform: translate(0px, -100%);
@@ -888,6 +888,37 @@ input[type=range] {
 @media screen and (max-width: 1000px) {
   .result-page__content .result-list .score-item {
     font-size: calc(24px + 1.25vh);
+  }
+}
+.result-page__content .info-open {
+  transform: translate(0%);
+}
+@media screen and (max-width: 1000px) {
+  .result-page__content .info-open {
+    transform: translateY(-50%) translateX(30%) scaleY(2);
+    width: 70%;
+    font-size: calc(25px + 1.5vw);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .result-page__content .info-open {
+    font-size: calc(25px + 1vw);
+  }
+}
+.result-page__content .info-close {
+  transform: translateX(100%);
+}
+.result-page__content .info-open-page {
+  transition: 0.8s;
+}
+@media screen and (max-width: 1000px) {
+  .result-page__content .info-open-page {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .result-page__content .info-open-page img {
+    width: 30%;
   }
 }
 

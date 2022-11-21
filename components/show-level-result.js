@@ -24,6 +24,7 @@ export const showLevelResult = (score) => {
         content.classList.remove('open')
     })
     resultButton.addEventListener('click', () => {
+        console.log(11111)
         showGameInformation('finish-game-results')
 
     })
