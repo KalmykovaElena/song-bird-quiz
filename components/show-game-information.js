@@ -34,7 +34,8 @@ export const showGameInformation = (node, info) => {
             resultsWrapper.parentElement.parentElement.classList.remove('open')
             resultsWrapper.parentElement.classList.remove('open')
             setTimeout(() => {
-                resultsWrapper.style.transform = 'translateX(100%)'
+                resultsWrapper.classList.remove('info-open')
+                resultsWrapper.classList.add('info-close')
             }, 1000)
 
         } else if (e.target.classList.contains('result-list__close')) {
