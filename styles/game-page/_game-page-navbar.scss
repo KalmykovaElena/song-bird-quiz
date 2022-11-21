@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns:  repeat(6, 1fr);
     border-radius: 10px;
-    font-size:2.3rem ;
+    font-size: calc(15px + 10 * (100vw / 1280));
     transition: 1s;
 
     @media screen and(max-width: 1000px) {
@@ -41,7 +41,7 @@
     }
   }
   .current{
-   font-size: 2rem;
+
     color:#ffffff;
     position: relative;
     padding: 15px;
