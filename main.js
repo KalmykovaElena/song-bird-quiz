@@ -17,7 +17,13 @@ gameMenu.addEventListener('click', (e) => {
         gameMenu.firstElementChild.style.opacity = '0'
         showGameInformation('start-page-results', info)
     } else if (e.target.classList.contains("start")) {
+        e.stopPropagation()
+        document.querySelector('.start-page').style.transform = 'translateY(-100%)'
+        document.querySelector('.wrapper-game-page').style.transform = 'translateY(-100%)'
 
+    }else if (e.target.classList.contains("main-start")) {
+        e.stopPropagation()
+        console.log(2222)
         document.querySelector('.start-page').style.transform = 'translateY(-100%)'
         document.querySelector('.wrapper-game-page').style.transform = 'translateY(-100%)'
         startGame()

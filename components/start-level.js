@@ -22,7 +22,8 @@ function StartLevel(data, levelNumber) {
     questionName.innerHTML = '******'
     let questionImage = document.querySelector('.game-board__question-image')//div
     questionImage.firstElementChild.src = 'assets/Weaver_Bird_Silhouette.jpg'
-    let questionCard = answersArray[getRandomNumber(0, answersArray.length - 1)]
+    let questionCard = 0
+     questionCard = answersArray[getRandomNumber(0, answersArray.length - 1)]
 
     CreateAudioPlayer(questionCard, questionBoard, 'game-board__question-sound')
     const questionAudio = questionBoard.getElementsByTagName('audio')[0]

@@ -10,8 +10,6 @@ export const showGameInformation = (node, info) => {
         <li class="score-item">${i + 1} - счет : <span>${e}</span></li>
         `
     }).join('') : "Нет результатов"
-    console.log(resultsWrapper.firstChild)
-    console.log(resultsWrapper)
     if (info) {
         resultsWrapper.firstChild.textContent = ''
         resultsWrapper.firstElementChild.innerHTML = info
