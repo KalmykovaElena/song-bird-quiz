@@ -46,7 +46,7 @@ function CreateAudioPlayer(card, place, selector) {
         const progressTime = duration ? Math.ceil(duration - currentTime) : 0
         if (progressPercent === 100) {
             isPlaying = !isPlaying
-            playerBtn.src = './assets/play.png'
+            playerBtn.src = './assets/play-64.png'
         }
 
         timer.innerHTML = progressTime >= 60 ? `${addZero(Math.ceil(progressTime / 60))}:${addZero(progressTime % 60)}` : `00:${addZero(progressTime)}`

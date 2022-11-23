@@ -6,7 +6,6 @@ import {showLevelResult} from "./show-level-result.js";
 
 
 function StartLevel(data, levelNumber) {
-    console.log('startLevel')
     let results = []
     let pointsNumber = 5
     let score = localStorage.getItem('score') ? Number(localStorage.getItem('score')) : 0
@@ -59,8 +58,6 @@ function StartLevel(data, levelNumber) {
             currentId = e.target
         }
         showCard(+currentId.id, answersArray)
-        console.log(+e.target.id)
-        console.log(questionCard.id)
 if(questionCard.id) {
     if (+e.target.id === questionCard.id) {
         itemBtn.classList.add('success')
@@ -77,7 +74,6 @@ if(questionCard.id) {
         localStorage.setItem('score', score)
         levelButton.classList.remove('disabled')
         questionCard = 0
-        console.log('кол-во баллов позиция succes' + pointsNumber)
         if (levelNumber === levels.length - 1) {
 
             setTimeout(() => {
@@ -96,7 +92,6 @@ if(questionCard.id) {
             itemBtn.classList.add('error')
             playSound('./assets/audio/mistake.mp3')
             pointsNumber -= 1
-            console.log('кол-во баллов позиция mistake' + pointsNumber)
         }
     }
 }
@@ -106,12 +101,6 @@ if(questionCard.id) {
         let sound = new Audio(soundObj)
         sound.play();
     }
-//delete code________________________________________
-    console.log(questionCard)
-    document.querySelector('.game-page__header-logo').addEventListener('click',(e)=>{
-        e.preventDefault()
-        showLevelResult(score)
-    })
 
 };
 

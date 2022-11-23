@@ -40,7 +40,6 @@ resultButton.addEventListener('click', () => {
 })
 
 export function startGame() {
-    console.log('startGame')
     let scoreValue = document.querySelector('.game-page__header__score-value')
     scoreValue.innerHTML = '0'
     let levelNumber = 0
