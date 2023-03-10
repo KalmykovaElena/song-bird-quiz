@@ -83,6 +83,9 @@
           flex-direction: column;
           justify-content: space-around;
           padding: 15px 50px;
+          @media screen and (max-width:320px) {
+            font-size:14px;
+          }
 
           .description-player {
             right: 0;

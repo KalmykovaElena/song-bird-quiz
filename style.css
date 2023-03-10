@@ -581,6 +581,11 @@ input[type=range] {
   justify-content: space-around;
   padding: 15px 50px;
 }
+@media screen and (max-width: 320px) {
+  .start-page-wrapper .slider .slider-container .slide {
+    font-size: 14px;
+  }
+}
 .start-page-wrapper .slider .slider-container .slide .description-player {
   right: 0;
   top: 0;
