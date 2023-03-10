@@ -1,4 +1,4 @@
-import CreateAudioPlayer from "./create-audio-player.js";
+import CreateAudioPlayer from "./audioPlayer/create-audio-player.js";
 
 
 export function showCard(id, array) {

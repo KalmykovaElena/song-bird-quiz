@@ -37,7 +37,7 @@
     position: relative;
     overflow: hidden;
 
-    @media screen and(max-width: 500px){
+    @media screen and (max-width: 500px){
       font-size: calc(34px + 24 * (100vw / 1280));
     }
     & div {
@@ -63,7 +63,7 @@
       font-size: calc(24px + 16 * (100vw / 1280));
       border: 2px solid #ffffff;
       border-radius: 10px;
-      @media screen and(max-width: 650px){
+      @media screen and (max-width: 650px){
         width: 93%;
         padding: 15px;
         font-size: calc(24px + 16 * (100vw / 650))
@@ -117,7 +117,7 @@
 
       .score-item {
         font-size: calc(24px + 16 * (100vw / 1280));
-        @media screen and(max-width:1000px ){
+        @media screen and (max-width:1000px ){
           font-size: calc(24px + 16 * (100vh / 1280));
 
         }
@@ -125,13 +125,13 @@
     }
     .info-open{
       transform: translate(0%);
-      @media screen and(max-width:1000px ){
+      @media screen and (max-width:1000px ){
         transform: translateY(-50%) translateX(30%) scaleY(2);
         width: 70%;
         font-size: calc(25px + 15 * (100vw / 1000));
         text-align: center;
       }
-      @media screen and(max-width:750px ){
+      @media screen and (max-width:750px ){
 
         font-size: calc(25px + 10 * (100vw / 1000));
 
@@ -142,7 +142,7 @@
     }
     .info-open-page {
       transition: .8s;
-      @media screen and(max-width: 1000px) {
+      @media screen and (max-width: 1000px) {
         flex-direction: row-reverse;
         justify-content: space-between;
         img {

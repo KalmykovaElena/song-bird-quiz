@@ -1,4 +1,4 @@
-import {startGame} from "../main.js";
+import {startGame} from "./startGame/start-game.js";
 
 export const showGameInformation = (node, info) => {
     const resultsWrapper = document.querySelector(`.${node}`)
@@ -10,6 +10,7 @@ export const showGameInformation = (node, info) => {
         <li class="score-item">${i + 1} - счет : <span>${e}</span></li>
         `
     }).join('') : "Нет результатов"
+
     if (info) {
         resultsWrapper.firstChild.textContent = ''
         resultsWrapper.firstElementChild.innerHTML = info
@@ -22,10 +23,12 @@ export const showGameInformation = (node, info) => {
 
     resultsWrapper.classList.add('info-open')
     perfomance.classList.add('info-open-page')
+
     if (resultsWrapper.classList.contains('info-close')) {
         resultsWrapper.classList.remove('info-close')
     }
      resultsWrapper.addEventListener("click", handleClick, { once: true })
+
     function handleClick (e){
         if (e.target.classList.contains('result-list__restart')) {
             startGame()

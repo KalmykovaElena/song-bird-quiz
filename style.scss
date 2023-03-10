@@ -35,7 +35,7 @@ html{
 
   border: 1px solid white;
   overflow: hidden;
-  @media screen and(max-width:770px ){
+  @media screen and (max-width:770px){
     overflow: auto;
   }
 }
@@ -82,13 +82,13 @@ audio{
 }
 .info-open{
   transform: translate(0%);
-  @media screen and(max-width:1000px ){
+  @media screen and (max-width:1000px ){
     transform: translateY(-20%) translateX(30%) scaleY(1.5);
     width: 70%;
     font-size: calc(25px + 15 * (100vw / 1000));
     text-align: center;
   }
-  @media screen and(max-width:750px ){
+  @media screen and (max-width:750px ){
 
     font-size: calc(22px + 10 * (100vw / 1000));
 
@@ -99,7 +99,7 @@ audio{
 }
 .info-open-page {
   transition: .8s;
-  @media screen and(max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: row-reverse;
     justify-content: space-between;
     img {
